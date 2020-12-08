@@ -1,0 +1,8 @@
+sentry:
+  dsn: YOUR_SENTRY_DSN
+  environment: test
+
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    client-id: ${spring.application.name}
