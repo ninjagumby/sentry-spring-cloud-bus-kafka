@@ -4,5 +4,5 @@ Fill in YOUR_SENTRY_DSN in sentry.properties and in application.yml.  Point spri
 
 Run org.example.TestApp and navigate to http://localhost:8080/ to generate a LOGGER.error message as well as a RuntimeException.  Note the generation of both events in Sentry.
 
-Uncomment the spring-cloud-starter-bus-kafka dependency in pom.xml and relaunch the application.  Generate the two messages again by hitting the endpoint.  Note that only one event is generated in Sentry.
+Uncomment the spring-cloud-starter-bus-kafka dependency in pom.xml and relaunch the application.  Generate the two messages again by hitting the endpoint.  Note that only the RuntimeException event is generated in Sentry - the LOGGER.error event is not generated.
 
